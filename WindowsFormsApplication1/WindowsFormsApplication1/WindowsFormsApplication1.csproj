@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDVDList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDVDList.Designer.cs">
+      <DependentUpon>frmDVDList.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDVDRmv.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDVDList.resx">
+      <DependentUpon>frmDVDList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDVDRmv.resx">
       <DependentUpon>frmDVDRmv.cs</DependentUpon>
     </EmbeddedResource>

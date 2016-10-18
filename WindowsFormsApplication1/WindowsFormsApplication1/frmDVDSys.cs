@@ -28,12 +28,7 @@ namespace WindowsFormsApplication1
             this.Hide();
             formDVDReg.Show();
         }
-
-        private void mnuMainMenu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
+        
         private void DVDSys_Menu_Load(object sender, EventArgs e)
         {
 
@@ -45,17 +40,24 @@ namespace WindowsFormsApplication1
             this.Hide();
             formDVDUpd.Show();
         }
-
-        private void DVDSys_Menu_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
-
+               
         private void mnuRemoveDVD_Click(object sender, EventArgs e)
         {
             frmDVDRmv formDVDRmv = new frmDVDRmv(this);
             this.Hide();
             formDVDRmv.Show();
+        }
+
+        private void mnuListDVD_Click(object sender, EventArgs e)
+        {
+            frmDVDList formDVDlist = new frmDVDList(this);
+            this.Hide();
+            formDVDlist.Show();
+        }
+
+        private void DVDSys_Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

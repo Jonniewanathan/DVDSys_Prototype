@@ -57,7 +57,6 @@
             this.mnuMainMenu.Size = new System.Drawing.Size(366, 29);
             this.mnuMainMenu.TabIndex = 0;
             this.mnuMainMenu.Text = "menuStrip1";
-            this.mnuMainMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mnuMainMenu_ItemClicked);
             // 
             // mnuDVD
             // 
@@ -96,6 +95,7 @@
             this.mnuListDVD.Name = "mnuListDVD";
             this.mnuListDVD.Size = new System.Drawing.Size(173, 26);
             this.mnuListDVD.Text = "List DVD";
+            this.mnuListDVD.Click += new System.EventHandler(this.mnuListDVD_Click);
             // 
             // customerToolStripMenuItem
             // 

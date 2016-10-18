@@ -41,7 +41,10 @@
             this.cboRetalRate = new System.Windows.Forms.ComboBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.nrmQuantity = new System.Windows.Forms.NumericUpDown();
+            this.lblQuantity = new System.Windows.Forms.Label();
             this.mnuDVDReg.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nrmQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuDVDReg
@@ -51,21 +54,21 @@
             this.mnuExit});
             this.mnuDVDReg.Location = new System.Drawing.Point(0, 0);
             this.mnuDVDReg.Name = "mnuDVDReg";
-            this.mnuDVDReg.Size = new System.Drawing.Size(316, 24);
+            this.mnuDVDReg.Size = new System.Drawing.Size(316, 29);
             this.mnuDVDReg.TabIndex = 0;
             this.mnuDVDReg.Text = "menuStrip1";
             // 
             // mnuBack
             // 
             this.mnuBack.Name = "mnuBack";
-            this.mnuBack.Size = new System.Drawing.Size(44, 20);
+            this.mnuBack.Size = new System.Drawing.Size(54, 25);
             this.mnuBack.Text = "Back";
             this.mnuBack.Click += new System.EventHandler(this.mnuBack_Click);
             // 
             // mnuExit
             // 
             this.mnuExit.Name = "mnuExit";
-            this.mnuExit.Size = new System.Drawing.Size(37, 20);
+            this.mnuExit.Size = new System.Drawing.Size(46, 25);
             this.mnuExit.Text = "Exit";
             this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
             // 
@@ -146,7 +149,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(78, 179);
+            this.btnSubmit.Location = new System.Drawing.Point(78, 203);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 23);
             this.btnSubmit.TabIndex = 10;
@@ -154,11 +157,29 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // nrmQuantity
+            // 
+            this.nrmQuantity.Location = new System.Drawing.Point(78, 167);
+            this.nrmQuantity.Name = "nrmQuantity";
+            this.nrmQuantity.Size = new System.Drawing.Size(36, 20);
+            this.nrmQuantity.TabIndex = 22;
+            // 
+            // lblQuantity
+            // 
+            this.lblQuantity.AutoSize = true;
+            this.lblQuantity.Location = new System.Drawing.Point(12, 172);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(46, 13);
+            this.lblQuantity.TabIndex = 21;
+            this.lblQuantity.Text = "Quantity";
+            // 
             // frmDVDReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(316, 239);
+            this.ClientSize = new System.Drawing.Size(316, 255);
+            this.Controls.Add(this.nrmQuantity);
+            this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.cboRetalRate);
@@ -177,6 +198,7 @@
             this.Load += new System.EventHandler(this.frmDVDReg_Load);
             this.mnuDVDReg.ResumeLayout(false);
             this.mnuDVDReg.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nrmQuantity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,5 +219,7 @@
         private System.Windows.Forms.ComboBox cboRetalRate;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.NumericUpDown nrmQuantity;
+        private System.Windows.Forms.Label lblQuantity;
     }
 }

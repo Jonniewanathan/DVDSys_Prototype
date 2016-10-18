@@ -27,7 +27,7 @@ namespace WindowsFormsApplication1
 
         private void frmDVDRmv_Load(object sender, EventArgs e)
         {
-
+            grpDvdDetails.Visible = false;
         }
 
         private void mnuBack_Click(object sender, EventArgs e)
@@ -43,7 +43,26 @@ namespace WindowsFormsApplication1
 
         private void frmDVDRmv_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            parent.Show();
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("DVD now Unavailable");
+
+            grpDvdDetails.Visible = false;
+
+            cboAgeRating.SelectedIndex = -1;
+            cboGenre.SelectedIndex = -1;
+            cboRetalRate.SelectedIndex = -1;
+            nrmQuantity.Value = 0;
+            txtTitle.Clear();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            grpDvdDetails.Visible = true;
+            lblDVDId.Text = txtSearch.Text;
         }
     }
 }
