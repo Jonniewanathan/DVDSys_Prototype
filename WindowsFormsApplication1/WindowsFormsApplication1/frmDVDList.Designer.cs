@@ -35,10 +35,8 @@
             this.lblSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.cboRetalRate = new System.Windows.Forms.ComboBox();
             this.cboGenre = new System.Windows.Forms.ComboBox();
             this.cboAgeRating = new System.Windows.Forms.ComboBox();
-            this.lblRate = new System.Windows.Forms.Label();
             this.lblGenre = new System.Windows.Forms.Label();
             this.lblAgeRating = new System.Windows.Forms.Label();
             this.mnuStrip.SuspendLayout();
@@ -72,7 +70,7 @@
             // lstDVDlist
             // 
             this.lstDVDlist.FormattingEnabled = true;
-            this.lstDVDlist.Location = new System.Drawing.Point(12, 192);
+            this.lstDVDlist.Location = new System.Drawing.Point(12, 151);
             this.lstDVDlist.Name = "lstDVDlist";
             this.lstDVDlist.Size = new System.Drawing.Size(387, 381);
             this.lstDVDlist.TabIndex = 3;
@@ -88,14 +86,14 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(75, 42);
+            this.txtSearch.Location = new System.Drawing.Point(89, 42);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(163, 20);
+            this.txtSearch.Size = new System.Drawing.Size(149, 20);
             this.txtSearch.TabIndex = 5;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(75, 149);
+            this.btnSearch.Location = new System.Drawing.Point(89, 122);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 6;
@@ -103,18 +101,10 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // cboRetalRate
-            // 
-            this.cboRetalRate.FormattingEnabled = true;
-            this.cboRetalRate.Location = new System.Drawing.Point(75, 122);
-            this.cboRetalRate.Name = "cboRetalRate";
-            this.cboRetalRate.Size = new System.Drawing.Size(149, 21);
-            this.cboRetalRate.TabIndex = 22;
-            // 
             // cboGenre
             // 
             this.cboGenre.FormattingEnabled = true;
-            this.cboGenre.Location = new System.Drawing.Point(75, 95);
+            this.cboGenre.Location = new System.Drawing.Point(89, 95);
             this.cboGenre.Name = "cboGenre";
             this.cboGenre.Size = new System.Drawing.Size(149, 21);
             this.cboGenre.TabIndex = 20;
@@ -122,24 +112,15 @@
             // cboAgeRating
             // 
             this.cboAgeRating.FormattingEnabled = true;
-            this.cboAgeRating.Location = new System.Drawing.Point(75, 68);
+            this.cboAgeRating.Location = new System.Drawing.Point(89, 68);
             this.cboAgeRating.Name = "cboAgeRating";
             this.cboAgeRating.Size = new System.Drawing.Size(149, 21);
             this.cboAgeRating.TabIndex = 18;
             // 
-            // lblRate
-            // 
-            this.lblRate.AutoSize = true;
-            this.lblRate.Location = new System.Drawing.Point(8, 125);
-            this.lblRate.Name = "lblRate";
-            this.lblRate.Size = new System.Drawing.Size(64, 13);
-            this.lblRate.TabIndex = 21;
-            this.lblRate.Text = "Rental Rate";
-            // 
             // lblGenre
             // 
             this.lblGenre.AutoSize = true;
-            this.lblGenre.Location = new System.Drawing.Point(8, 98);
+            this.lblGenre.Location = new System.Drawing.Point(28, 95);
             this.lblGenre.Name = "lblGenre";
             this.lblGenre.Size = new System.Drawing.Size(36, 13);
             this.lblGenre.TabIndex = 19;
@@ -148,7 +129,7 @@
             // lblAgeRating
             // 
             this.lblAgeRating.AutoSize = true;
-            this.lblAgeRating.Location = new System.Drawing.Point(9, 71);
+            this.lblAgeRating.Location = new System.Drawing.Point(28, 71);
             this.lblAgeRating.Name = "lblAgeRating";
             this.lblAgeRating.Size = new System.Drawing.Size(60, 13);
             this.lblAgeRating.TabIndex = 17;
@@ -158,11 +139,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 585);
-            this.Controls.Add(this.cboRetalRate);
+            this.ClientSize = new System.Drawing.Size(411, 538);
             this.Controls.Add(this.cboGenre);
             this.Controls.Add(this.cboAgeRating);
-            this.Controls.Add(this.lblRate);
             this.Controls.Add(this.lblGenre);
             this.Controls.Add(this.lblAgeRating);
             this.Controls.Add(this.btnSearch);
@@ -190,10 +169,8 @@
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.ComboBox cboRetalRate;
         private System.Windows.Forms.ComboBox cboGenre;
         private System.Windows.Forms.ComboBox cboAgeRating;
-        private System.Windows.Forms.Label lblRate;
         private System.Windows.Forms.Label lblGenre;
         private System.Windows.Forms.Label lblAgeRating;
     }

@@ -40,13 +40,17 @@ namespace WindowsFormsApplication1
             //makes the group box visible after clicking the search button
             grpDvdDetails.Visible = true;
             lblDVDId.Text = txtSearch.Text;
+            txtTitle.Text = ("The Lion King");
+            cboAgeRating.SelectedIndex = 0;
+            cboGenre.SelectedIndex = 6;
+            cboRetalRate.SelectedIndex = 3;
+
         }
 
         private void frmDVDUpd_Load(object sender, EventArgs e)
         {   
             //Makes the group box invisible when the form is loaded
             grpDvdDetails.Visible = false;
-
 
             //This code initialises the contents of the combo boxes
             cboAgeRating.Items.Add("General");

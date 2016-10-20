@@ -64,11 +64,6 @@ namespace WindowsFormsApplication1
             cboGenre.Items.Add("Thriller");
             cboGenre.Items.Add("War");
             cboGenre.Items.Add("Western");
-
-            cboRetalRate.Items.Add("New Release");
-            cboRetalRate.Items.Add("Old Release");
-            cboRetalRate.Items.Add("New Childrens Release");
-            cboRetalRate.Items.Add("Old Childrens Release");
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
