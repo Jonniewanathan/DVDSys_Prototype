@@ -34,10 +34,6 @@
             this.grpDvdDetails = new System.Windows.Forms.GroupBox();
             this.lblDVDId = new System.Windows.Forms.Label();
             this.btnRemove = new System.Windows.Forms.Button();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.cboRetalRate = new System.Windows.Forms.ComboBox();
-            this.cboGenre = new System.Windows.Forms.ComboBox();
-            this.cboAgeRating = new System.Windows.Forms.ComboBox();
             this.lblRate = new System.Windows.Forms.Label();
             this.lblGenre = new System.Windows.Forms.Label();
             this.lblAgeRating = new System.Windows.Forms.Label();
@@ -45,11 +41,12 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.lblSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.nrmQuantity = new System.Windows.Forms.NumericUpDown();
-            this.lblQuantity = new System.Windows.Forms.Label();
+            this.lblTitle1 = new System.Windows.Forms.Label();
+            this.lblAgeRating1 = new System.Windows.Forms.Label();
+            this.lblGenre1 = new System.Windows.Forms.Label();
+            this.lblRentalRate1 = new System.Windows.Forms.Label();
             this.mnuStrip.SuspendLayout();
             this.grpDvdDetails.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nrmQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuStrip
@@ -59,34 +56,32 @@
             this.mnuExit});
             this.mnuStrip.Location = new System.Drawing.Point(0, 0);
             this.mnuStrip.Name = "mnuStrip";
-            this.mnuStrip.Size = new System.Drawing.Size(347, 29);
+            this.mnuStrip.Size = new System.Drawing.Size(347, 24);
             this.mnuStrip.TabIndex = 1;
             this.mnuStrip.Text = "mnuStrip";
             // 
             // mnuBack
             // 
             this.mnuBack.Name = "mnuBack";
-            this.mnuBack.Size = new System.Drawing.Size(54, 25);
+            this.mnuBack.Size = new System.Drawing.Size(44, 20);
             this.mnuBack.Text = "Back";
             this.mnuBack.Click += new System.EventHandler(this.mnuBack_Click);
             // 
             // mnuExit
             // 
             this.mnuExit.Name = "mnuExit";
-            this.mnuExit.Size = new System.Drawing.Size(46, 25);
+            this.mnuExit.Size = new System.Drawing.Size(37, 20);
             this.mnuExit.Text = "Exit";
             this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
             // 
             // grpDvdDetails
             // 
-            this.grpDvdDetails.Controls.Add(this.nrmQuantity);
-            this.grpDvdDetails.Controls.Add(this.lblQuantity);
+            this.grpDvdDetails.Controls.Add(this.lblRentalRate1);
+            this.grpDvdDetails.Controls.Add(this.lblGenre1);
+            this.grpDvdDetails.Controls.Add(this.lblAgeRating1);
+            this.grpDvdDetails.Controls.Add(this.lblTitle1);
             this.grpDvdDetails.Controls.Add(this.lblDVDId);
             this.grpDvdDetails.Controls.Add(this.btnRemove);
-            this.grpDvdDetails.Controls.Add(this.txtTitle);
-            this.grpDvdDetails.Controls.Add(this.cboRetalRate);
-            this.grpDvdDetails.Controls.Add(this.cboGenre);
-            this.grpDvdDetails.Controls.Add(this.cboAgeRating);
             this.grpDvdDetails.Controls.Add(this.lblRate);
             this.grpDvdDetails.Controls.Add(this.lblGenre);
             this.grpDvdDetails.Controls.Add(this.lblAgeRating);
@@ -116,37 +111,6 @@
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
-            // 
-            // txtTitle
-            // 
-            this.txtTitle.Location = new System.Drawing.Point(101, 60);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(149, 20);
-            this.txtTitle.TabIndex = 10;
-            // 
-            // cboRetalRate
-            // 
-            this.cboRetalRate.FormattingEnabled = true;
-            this.cboRetalRate.Location = new System.Drawing.Point(101, 140);
-            this.cboRetalRate.Name = "cboRetalRate";
-            this.cboRetalRate.Size = new System.Drawing.Size(149, 21);
-            this.cboRetalRate.TabIndex = 16;
-            // 
-            // cboGenre
-            // 
-            this.cboGenre.FormattingEnabled = true;
-            this.cboGenre.Location = new System.Drawing.Point(101, 113);
-            this.cboGenre.Name = "cboGenre";
-            this.cboGenre.Size = new System.Drawing.Size(149, 21);
-            this.cboGenre.TabIndex = 14;
-            // 
-            // cboAgeRating
-            // 
-            this.cboAgeRating.FormattingEnabled = true;
-            this.cboAgeRating.Location = new System.Drawing.Point(101, 86);
-            this.cboAgeRating.Name = "cboAgeRating";
-            this.cboAgeRating.Size = new System.Drawing.Size(149, 21);
-            this.cboAgeRating.TabIndex = 12;
             // 
             // lblRate
             // 
@@ -210,21 +174,41 @@
             this.txtSearch.Size = new System.Drawing.Size(124, 20);
             this.txtSearch.TabIndex = 5;
             // 
-            // nrmQuantity
+            // lblTitle1
             // 
-            this.nrmQuantity.Location = new System.Drawing.Point(101, 167);
-            this.nrmQuantity.Name = "nrmQuantity";
-            this.nrmQuantity.Size = new System.Drawing.Size(36, 20);
-            this.nrmQuantity.TabIndex = 22;
+            this.lblTitle1.AutoSize = true;
+            this.lblTitle1.Location = new System.Drawing.Point(101, 62);
+            this.lblTitle1.Name = "lblTitle1";
+            this.lblTitle1.Size = new System.Drawing.Size(35, 13);
+            this.lblTitle1.TabIndex = 19;
+            this.lblTitle1.Text = "label1";
             // 
-            // lblQuantity
+            // lblAgeRating1
             // 
-            this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Location = new System.Drawing.Point(34, 169);
-            this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(46, 13);
-            this.lblQuantity.TabIndex = 21;
-            this.lblQuantity.Text = "Quantity";
+            this.lblAgeRating1.AutoSize = true;
+            this.lblAgeRating1.Location = new System.Drawing.Point(101, 88);
+            this.lblAgeRating1.Name = "lblAgeRating1";
+            this.lblAgeRating1.Size = new System.Drawing.Size(35, 13);
+            this.lblAgeRating1.TabIndex = 20;
+            this.lblAgeRating1.Text = "label1";
+            // 
+            // lblGenre1
+            // 
+            this.lblGenre1.AutoSize = true;
+            this.lblGenre1.Location = new System.Drawing.Point(101, 116);
+            this.lblGenre1.Name = "lblGenre1";
+            this.lblGenre1.Size = new System.Drawing.Size(35, 13);
+            this.lblGenre1.TabIndex = 21;
+            this.lblGenre1.Text = "label1";
+            // 
+            // lblRentalRate1
+            // 
+            this.lblRentalRate1.AutoSize = true;
+            this.lblRentalRate1.Location = new System.Drawing.Point(101, 142);
+            this.lblRentalRate1.Name = "lblRentalRate1";
+            this.lblRentalRate1.Size = new System.Drawing.Size(35, 13);
+            this.lblRentalRate1.TabIndex = 22;
+            this.lblRentalRate1.Text = "label1";
             // 
             // frmDVDRmv
             // 
@@ -244,7 +228,6 @@
             this.mnuStrip.PerformLayout();
             this.grpDvdDetails.ResumeLayout(false);
             this.grpDvdDetails.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nrmQuantity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,10 +241,6 @@
         private System.Windows.Forms.GroupBox grpDvdDetails;
         private System.Windows.Forms.Label lblDVDId;
         private System.Windows.Forms.Button btnRemove;
-        private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.ComboBox cboRetalRate;
-        private System.Windows.Forms.ComboBox cboGenre;
-        private System.Windows.Forms.ComboBox cboAgeRating;
         private System.Windows.Forms.Label lblRate;
         private System.Windows.Forms.Label lblGenre;
         private System.Windows.Forms.Label lblAgeRating;
@@ -269,7 +248,9 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.NumericUpDown nrmQuantity;
-        private System.Windows.Forms.Label lblQuantity;
+        private System.Windows.Forms.Label lblRentalRate1;
+        private System.Windows.Forms.Label lblGenre1;
+        private System.Windows.Forms.Label lblAgeRating1;
+        private System.Windows.Forms.Label lblTitle1;
     }
 }

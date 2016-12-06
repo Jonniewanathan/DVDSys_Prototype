@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class frmDVDReg : Form
     {
+        private int num = 1;
         private DVDSys_Menu parent;
 
         public frmDVDReg()
@@ -76,7 +77,8 @@ namespace WindowsFormsApplication1
             cboAgeRating.SelectedIndex = -1;
             cboGenre.SelectedIndex = -1;
             cboRetalRate.SelectedIndex = -1;
-            nrmQuantity.Value = 0;
+            num++;
+            lblDVDidno.Text = num.ToString() ;
             txtTitle.Clear();
         }
 

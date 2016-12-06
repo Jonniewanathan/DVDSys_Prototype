@@ -94,7 +94,6 @@ namespace WindowsFormsApplication1
             cboAgeRating.SelectedIndex = -1;
             cboGenre.SelectedIndex = -1;
             cboRetalRate.SelectedIndex = -1;
-            nrmQuantity.Value = 0;
             txtTitle.Clear();
 
         }

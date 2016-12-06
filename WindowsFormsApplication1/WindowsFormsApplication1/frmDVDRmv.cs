@@ -28,6 +28,8 @@ namespace WindowsFormsApplication1
         private void frmDVDRmv_Load(object sender, EventArgs e)
         {
             grpDvdDetails.Visible = false;
+
+            
         }
 
         private void mnuBack_Click(object sender, EventArgs e)
@@ -52,17 +54,18 @@ namespace WindowsFormsApplication1
 
             grpDvdDetails.Visible = false;
 
-            cboAgeRating.SelectedIndex = -1;
-            cboGenre.SelectedIndex = -1;
-            cboRetalRate.SelectedIndex = -1;
-            nrmQuantity.Value = 0;
-            txtTitle.Clear();
+            
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
             grpDvdDetails.Visible = true;
             lblDVDId.Text = txtSearch.Text;
+            lblTitle1.Text = "The Matrix";
+            lblGenre1.Text = "Action";
+            lblAgeRating1.Text = "18";
+            lblRentalRate1.Text = "Old Release";
+            
         }
     }
 }

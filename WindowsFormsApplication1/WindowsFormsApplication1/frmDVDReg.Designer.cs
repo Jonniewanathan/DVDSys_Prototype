@@ -41,10 +41,9 @@
             this.cboRetalRate = new System.Windows.Forms.ComboBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.nrmQuantity = new System.Windows.Forms.NumericUpDown();
-            this.lblQuantity = new System.Windows.Forms.Label();
+            this.lblDVDidno = new System.Windows.Forms.Label();
+            this.lblDVDid = new System.Windows.Forms.Label();
             this.mnuDVDReg.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nrmQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuDVDReg
@@ -54,21 +53,21 @@
             this.mnuExit});
             this.mnuDVDReg.Location = new System.Drawing.Point(0, 0);
             this.mnuDVDReg.Name = "mnuDVDReg";
-            this.mnuDVDReg.Size = new System.Drawing.Size(316, 29);
+            this.mnuDVDReg.Size = new System.Drawing.Size(316, 24);
             this.mnuDVDReg.TabIndex = 0;
             this.mnuDVDReg.Text = "menuStrip1";
             // 
             // mnuBack
             // 
             this.mnuBack.Name = "mnuBack";
-            this.mnuBack.Size = new System.Drawing.Size(54, 25);
+            this.mnuBack.Size = new System.Drawing.Size(44, 20);
             this.mnuBack.Text = "Back";
             this.mnuBack.Click += new System.EventHandler(this.mnuBack_Click);
             // 
             // mnuExit
             // 
             this.mnuExit.Name = "mnuExit";
-            this.mnuExit.Size = new System.Drawing.Size(46, 25);
+            this.mnuExit.Size = new System.Drawing.Size(37, 20);
             this.mnuExit.Text = "Exit";
             this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
             // 
@@ -157,29 +156,31 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // nrmQuantity
+            // lblDVDidno
             // 
-            this.nrmQuantity.Location = new System.Drawing.Point(78, 167);
-            this.nrmQuantity.Name = "nrmQuantity";
-            this.nrmQuantity.Size = new System.Drawing.Size(36, 20);
-            this.nrmQuantity.TabIndex = 22;
+            this.lblDVDidno.AutoSize = true;
+            this.lblDVDidno.Location = new System.Drawing.Point(78, 28);
+            this.lblDVDidno.Name = "lblDVDidno";
+            this.lblDVDidno.Size = new System.Drawing.Size(13, 13);
+            this.lblDVDidno.TabIndex = 11;
+            this.lblDVDidno.Text = "1";
             // 
-            // lblQuantity
+            // lblDVDid
             // 
-            this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Location = new System.Drawing.Point(12, 172);
-            this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(46, 13);
-            this.lblQuantity.TabIndex = 21;
-            this.lblQuantity.Text = "Quantity";
+            this.lblDVDid.AutoSize = true;
+            this.lblDVDid.Location = new System.Drawing.Point(13, 27);
+            this.lblDVDid.Name = "lblDVDid";
+            this.lblDVDid.Size = new System.Drawing.Size(38, 13);
+            this.lblDVDid.TabIndex = 12;
+            this.lblDVDid.Text = "DVDid";
             // 
             // frmDVDReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(316, 255);
-            this.Controls.Add(this.nrmQuantity);
-            this.Controls.Add(this.lblQuantity);
+            this.Controls.Add(this.lblDVDid);
+            this.Controls.Add(this.lblDVDidno);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.cboRetalRate);
@@ -198,7 +199,6 @@
             this.Load += new System.EventHandler(this.frmDVDReg_Load);
             this.mnuDVDReg.ResumeLayout(false);
             this.mnuDVDReg.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nrmQuantity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,7 +219,7 @@
         private System.Windows.Forms.ComboBox cboRetalRate;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Button btnSubmit;
-        private System.Windows.Forms.NumericUpDown nrmQuantity;
-        private System.Windows.Forms.Label lblQuantity;
+        private System.Windows.Forms.Label lblDVDidno;
+        private System.Windows.Forms.Label lblDVDid;
     }
 }

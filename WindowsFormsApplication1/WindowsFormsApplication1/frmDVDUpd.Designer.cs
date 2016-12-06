@@ -35,8 +35,6 @@
             this.lblSearch = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.grpDvdDetails = new System.Windows.Forms.GroupBox();
-            this.nrmQuantity = new System.Windows.Forms.NumericUpDown();
-            this.lblQuantity = new System.Windows.Forms.Label();
             this.lblDVDId = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.txtTitle = new System.Windows.Forms.TextBox();
@@ -49,7 +47,6 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.mnuStrip.SuspendLayout();
             this.grpDvdDetails.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nrmQuantity)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuStrip
@@ -59,21 +56,21 @@
             this.mnuExit});
             this.mnuStrip.Location = new System.Drawing.Point(0, 0);
             this.mnuStrip.Name = "mnuStrip";
-            this.mnuStrip.Size = new System.Drawing.Size(336, 29);
+            this.mnuStrip.Size = new System.Drawing.Size(336, 24);
             this.mnuStrip.TabIndex = 0;
             this.mnuStrip.Text = "mnuStrip";
             // 
             // mnuBack
             // 
             this.mnuBack.Name = "mnuBack";
-            this.mnuBack.Size = new System.Drawing.Size(54, 25);
+            this.mnuBack.Size = new System.Drawing.Size(44, 20);
             this.mnuBack.Text = "Back";
             this.mnuBack.Click += new System.EventHandler(this.mnuBack_Click);
             // 
             // mnuExit
             // 
             this.mnuExit.Name = "mnuExit";
-            this.mnuExit.Size = new System.Drawing.Size(46, 25);
+            this.mnuExit.Size = new System.Drawing.Size(37, 20);
             this.mnuExit.Text = "Exit";
             this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
             // 
@@ -105,8 +102,6 @@
             // 
             // grpDvdDetails
             // 
-            this.grpDvdDetails.Controls.Add(this.nrmQuantity);
-            this.grpDvdDetails.Controls.Add(this.lblQuantity);
             this.grpDvdDetails.Controls.Add(this.lblDVDId);
             this.grpDvdDetails.Controls.Add(this.btnUpdate);
             this.grpDvdDetails.Controls.Add(this.txtTitle);
@@ -123,22 +118,6 @@
             this.grpDvdDetails.TabIndex = 4;
             this.grpDvdDetails.TabStop = false;
             this.grpDvdDetails.Text = "DVD details";
-            // 
-            // nrmQuantity
-            // 
-            this.nrmQuantity.Location = new System.Drawing.Point(101, 167);
-            this.nrmQuantity.Name = "nrmQuantity";
-            this.nrmQuantity.Size = new System.Drawing.Size(36, 20);
-            this.nrmQuantity.TabIndex = 20;
-            // 
-            // lblQuantity
-            // 
-            this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Location = new System.Drawing.Point(35, 172);
-            this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(46, 13);
-            this.lblQuantity.TabIndex = 19;
-            this.lblQuantity.Text = "Quantity";
             // 
             // lblDVDId
             // 
@@ -245,7 +224,6 @@
             this.mnuStrip.PerformLayout();
             this.grpDvdDetails.ResumeLayout(false);
             this.grpDvdDetails.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nrmQuantity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,7 +248,5 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblDVDId;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.NumericUpDown nrmQuantity;
-        private System.Windows.Forms.Label lblQuantity;
     }
 }

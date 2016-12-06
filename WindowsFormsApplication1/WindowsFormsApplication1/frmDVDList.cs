@@ -60,7 +60,7 @@ namespace WindowsFormsApplication1
             cboGenre.Items.Add("Horror");
             cboGenre.Items.Add("Mystery");
             cboGenre.Items.Add("Romance");
-            cboGenre.Items.Add("Sci - Fi");
+            cboGenre.Items.Add("Sci-Fi");
             cboGenre.Items.Add("Thriller");
             cboGenre.Items.Add("War");
             cboGenre.Items.Add("Western");
@@ -70,13 +70,15 @@ namespace WindowsFormsApplication1
         {
             List<string> _items = new List<string>();
             lstDVDlist.Visible = true;
-            if (txtSearch.Text == "King")
-            {
-                _items.Add("The Lord of the Rings: The Return of the King");
-                _items.Add("The Lion King");
-                _items.Add("The King's Speech");
-                lstDVDlist.DataSource = _items;
-            }
+            _items.Add("The Lord of the Rings: The Return of the King");
+            _items.Add("The Lion King");
+            _items.Add("The King's Speech");
+            _items.Add("The Matrix");
+            _items.Add("Taken");
+            _items.Add("Taken 2");
+            _items.Add("Taken 3");
+            lstDVDlist.DataSource = _items;
+            
         }
 
         private void frmDVDList_FormClosed(object sender, FormClosedEventArgs e)
