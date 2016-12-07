@@ -63,7 +63,15 @@ namespace WindowsFormsApplication1
         private void mnuRegisterCustomer_Click(object sender, EventArgs e)
         {
             frmCustomerReg formCustomerReg = new frmCustomerReg(this);
+            this.Hide();
             formCustomerReg.Show();
+        }
+
+        private void updateCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCustomerUpdate formCustomerUpdate = new frmCustomerUpdate(this);
+            this.Hide();
+            formCustomerUpdate.Show();
         }
     }
 }
