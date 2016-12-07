@@ -32,6 +32,10 @@
             this.mnuBack = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.grpDvdDetails = new System.Windows.Forms.GroupBox();
+            this.lblRentalRate1 = new System.Windows.Forms.Label();
+            this.lblGenre1 = new System.Windows.Forms.Label();
+            this.lblAgeRating1 = new System.Windows.Forms.Label();
+            this.lblTitle1 = new System.Windows.Forms.Label();
             this.lblDVDId = new System.Windows.Forms.Label();
             this.btnRemove = new System.Windows.Forms.Button();
             this.lblRate = new System.Windows.Forms.Label();
@@ -41,10 +45,6 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.lblSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.lblTitle1 = new System.Windows.Forms.Label();
-            this.lblAgeRating1 = new System.Windows.Forms.Label();
-            this.lblGenre1 = new System.Windows.Forms.Label();
-            this.lblRentalRate1 = new System.Windows.Forms.Label();
             this.mnuStrip.SuspendLayout();
             this.grpDvdDetails.SuspendLayout();
             this.SuspendLayout();
@@ -92,6 +92,42 @@
             this.grpDvdDetails.TabIndex = 8;
             this.grpDvdDetails.TabStop = false;
             this.grpDvdDetails.Text = "DVD details";
+            // 
+            // lblRentalRate1
+            // 
+            this.lblRentalRate1.AutoSize = true;
+            this.lblRentalRate1.Location = new System.Drawing.Point(101, 142);
+            this.lblRentalRate1.Name = "lblRentalRate1";
+            this.lblRentalRate1.Size = new System.Drawing.Size(35, 13);
+            this.lblRentalRate1.TabIndex = 22;
+            this.lblRentalRate1.Text = "label1";
+            // 
+            // lblGenre1
+            // 
+            this.lblGenre1.AutoSize = true;
+            this.lblGenre1.Location = new System.Drawing.Point(101, 116);
+            this.lblGenre1.Name = "lblGenre1";
+            this.lblGenre1.Size = new System.Drawing.Size(35, 13);
+            this.lblGenre1.TabIndex = 21;
+            this.lblGenre1.Text = "label1";
+            // 
+            // lblAgeRating1
+            // 
+            this.lblAgeRating1.AutoSize = true;
+            this.lblAgeRating1.Location = new System.Drawing.Point(101, 88);
+            this.lblAgeRating1.Name = "lblAgeRating1";
+            this.lblAgeRating1.Size = new System.Drawing.Size(35, 13);
+            this.lblAgeRating1.TabIndex = 20;
+            this.lblAgeRating1.Text = "label1";
+            // 
+            // lblTitle1
+            // 
+            this.lblTitle1.AutoSize = true;
+            this.lblTitle1.Location = new System.Drawing.Point(101, 62);
+            this.lblTitle1.Name = "lblTitle1";
+            this.lblTitle1.Size = new System.Drawing.Size(35, 13);
+            this.lblTitle1.TabIndex = 19;
+            this.lblTitle1.Text = "label1";
             // 
             // lblDVDId
             // 
@@ -173,42 +209,6 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(124, 20);
             this.txtSearch.TabIndex = 5;
-            // 
-            // lblTitle1
-            // 
-            this.lblTitle1.AutoSize = true;
-            this.lblTitle1.Location = new System.Drawing.Point(101, 62);
-            this.lblTitle1.Name = "lblTitle1";
-            this.lblTitle1.Size = new System.Drawing.Size(35, 13);
-            this.lblTitle1.TabIndex = 19;
-            this.lblTitle1.Text = "label1";
-            // 
-            // lblAgeRating1
-            // 
-            this.lblAgeRating1.AutoSize = true;
-            this.lblAgeRating1.Location = new System.Drawing.Point(101, 88);
-            this.lblAgeRating1.Name = "lblAgeRating1";
-            this.lblAgeRating1.Size = new System.Drawing.Size(35, 13);
-            this.lblAgeRating1.TabIndex = 20;
-            this.lblAgeRating1.Text = "label1";
-            // 
-            // lblGenre1
-            // 
-            this.lblGenre1.AutoSize = true;
-            this.lblGenre1.Location = new System.Drawing.Point(101, 116);
-            this.lblGenre1.Name = "lblGenre1";
-            this.lblGenre1.Size = new System.Drawing.Size(35, 13);
-            this.lblGenre1.TabIndex = 21;
-            this.lblGenre1.Text = "label1";
-            // 
-            // lblRentalRate1
-            // 
-            this.lblRentalRate1.AutoSize = true;
-            this.lblRentalRate1.Location = new System.Drawing.Point(101, 142);
-            this.lblRentalRate1.Name = "lblRentalRate1";
-            this.lblRentalRate1.Size = new System.Drawing.Size(35, 13);
-            this.lblRentalRate1.TabIndex = 22;
-            this.lblRentalRate1.Text = "label1";
             // 
             // frmDVDRmv
             // 

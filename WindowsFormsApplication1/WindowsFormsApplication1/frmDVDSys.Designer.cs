@@ -35,14 +35,14 @@
             this.mnuRemoveDVD = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuListDVD = new System.Windows.Forms.ToolStripMenuItem();
             this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registerCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuRegisterCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.updateCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deRegisterCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rentalsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.rentDVDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.returnDVDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listDailyRentalsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,18 +101,18 @@
             // customerToolStripMenuItem
             // 
             this.customerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registerCustomerToolStripMenuItem,
+            this.mnuRegisterCustomer,
             this.updateCustomerToolStripMenuItem,
             this.deRegisterCustomerToolStripMenuItem});
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
             this.customerToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.customerToolStripMenuItem.Text = "Customer";
             // 
-            // registerCustomerToolStripMenuItem
+            // mnuRegisterCustomer
             // 
-            this.registerCustomerToolStripMenuItem.Name = "registerCustomerToolStripMenuItem";
-            this.registerCustomerToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.registerCustomerToolStripMenuItem.Text = "Register Customer";
+            this.mnuRegisterCustomer.Name = "mnuRegisterCustomer";
+            this.mnuRegisterCustomer.Size = new System.Drawing.Size(190, 22);
+            this.mnuRegisterCustomer.Text = "Register Customer";
             // 
             // updateCustomerToolStripMenuItem
             // 
@@ -136,13 +136,6 @@
             this.rentalsToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.rentalsToolStripMenuItem.Text = "Rentals";
             // 
-            // mnuExit
-            // 
-            this.mnuExit.Name = "mnuExit";
-            this.mnuExit.Size = new System.Drawing.Size(37, 20);
-            this.mnuExit.Text = "Exit";
-            this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
-            // 
             // rentDVDToolStripMenuItem
             // 
             this.rentDVDToolStripMenuItem.Name = "rentDVDToolStripMenuItem";
@@ -160,6 +153,13 @@
             this.listDailyRentalsToolStripMenuItem.Name = "listDailyRentalsToolStripMenuItem";
             this.listDailyRentalsToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.listDailyRentalsToolStripMenuItem.Text = "List Daily Rentals";
+            // 
+            // mnuExit
+            // 
+            this.mnuExit.Name = "mnuExit";
+            this.mnuExit.Size = new System.Drawing.Size(37, 20);
+            this.mnuExit.Text = "Exit";
+            this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
             // 
             // DVDSys_Menu
             // 
@@ -190,7 +190,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuUpdateDVD;
         private System.Windows.Forms.ToolStripMenuItem mnuRemoveDVD;
         private System.Windows.Forms.ToolStripMenuItem mnuListDVD;
-        private System.Windows.Forms.ToolStripMenuItem registerCustomerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuRegisterCustomer;
         private System.Windows.Forms.ToolStripMenuItem updateCustomerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deRegisterCustomerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rentDVDToolStripMenuItem;
