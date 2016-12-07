@@ -73,28 +73,28 @@
             // mnuRegisterDVD
             // 
             this.mnuRegisterDVD.Name = "mnuRegisterDVD";
-            this.mnuRegisterDVD.Size = new System.Drawing.Size(152, 22);
+            this.mnuRegisterDVD.Size = new System.Drawing.Size(143, 22);
             this.mnuRegisterDVD.Text = "Register DVD";
             this.mnuRegisterDVD.Click += new System.EventHandler(this.mnuRegisterDVD_Click);
             // 
             // mnuUpdateDVD
             // 
             this.mnuUpdateDVD.Name = "mnuUpdateDVD";
-            this.mnuUpdateDVD.Size = new System.Drawing.Size(152, 22);
+            this.mnuUpdateDVD.Size = new System.Drawing.Size(143, 22);
             this.mnuUpdateDVD.Text = "Update DVD";
             this.mnuUpdateDVD.Click += new System.EventHandler(this.mnuUpdateDVD_Click);
             // 
             // mnuRemoveDVD
             // 
             this.mnuRemoveDVD.Name = "mnuRemoveDVD";
-            this.mnuRemoveDVD.Size = new System.Drawing.Size(152, 22);
+            this.mnuRemoveDVD.Size = new System.Drawing.Size(143, 22);
             this.mnuRemoveDVD.Text = "Remove DVD";
             this.mnuRemoveDVD.Click += new System.EventHandler(this.mnuRemoveDVD_Click);
             // 
             // mnuListDVD
             // 
             this.mnuListDVD.Name = "mnuListDVD";
-            this.mnuListDVD.Size = new System.Drawing.Size(152, 22);
+            this.mnuListDVD.Size = new System.Drawing.Size(143, 22);
             this.mnuListDVD.Text = "List DVD";
             this.mnuListDVD.Click += new System.EventHandler(this.mnuListDVD_Click);
             // 
@@ -113,6 +113,7 @@
             this.mnuRegisterCustomer.Name = "mnuRegisterCustomer";
             this.mnuRegisterCustomer.Size = new System.Drawing.Size(190, 22);
             this.mnuRegisterCustomer.Text = "Register Customer";
+            this.mnuRegisterCustomer.Click += new System.EventHandler(this.mnuRegisterCustomer_Click);
             // 
             // updateCustomerToolStripMenuItem
             // 

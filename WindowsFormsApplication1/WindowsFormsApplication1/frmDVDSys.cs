@@ -59,5 +59,11 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
+
+        private void mnuRegisterCustomer_Click(object sender, EventArgs e)
+        {
+            frmCustomerReg formCustomerReg = new frmCustomerReg(this);
+            formCustomerReg.Show();
+        }
     }
 }
