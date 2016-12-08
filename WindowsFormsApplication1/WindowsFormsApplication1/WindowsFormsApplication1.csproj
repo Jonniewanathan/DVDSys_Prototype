@@ -100,6 +100,12 @@
     <Compile Include="frmDVDReg.Designer.cs">
       <DependentUpon>frmDVDReg.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListDailyRentals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListDailyRentals.Designer.cs">
+      <DependentUpon>frmListDailyRentals.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRentDVD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDVDReg.resx">
       <DependentUpon>frmDVDReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListDailyRentals.resx">
+      <DependentUpon>frmListDailyRentals.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRentDVD.resx">
       <DependentUpon>frmRentDVD.cs</DependentUpon>

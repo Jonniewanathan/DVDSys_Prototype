@@ -104,7 +104,9 @@ namespace WindowsFormsApplication1
 
         private void mnuListDailyRentals_Click(object sender, EventArgs e)
         {
-            frmDailyRentals
+            frmListDailyRentals formListDailyRentals = new frmListDailyRentals(this);
+            this.Hide();
+            formListDailyRentals.Show();
         }
     }
 }
