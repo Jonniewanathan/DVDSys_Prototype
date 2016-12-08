@@ -51,17 +51,49 @@ namespace WindowsFormsApplication1
 
         private void lstCustomer_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<string> _items = new List<string>();
-            lstDVDlist.Visible = true;
-            _items.Add("The Lord of the Rings: The Return of the King");
-            _items.Add("The Lion King");
-            _items.Add("The King's Speech");
-            _items.Add("The Matrix");
-            _items.Add("Taken");
-            _items.Add("Taken 2");
-            _items.Add("Taken 3");
-            _items.Add("Matrix Reloaded");
-            lstDVDlist.DataSource = _items;
+            if(lstCustomer.SelectedIndex == 1)
+            {
+                List<string> _items = new List<string>();
+                lstDVDlist.Visible = true;
+                _items.Add("The Lord of the Rings: The Return of the King");
+                _items.Add("The Lion King");
+                _items.Add("The King's Speech");
+                _items.Add("The Matrix");
+                _items.Add("Taken");
+                _items.Add("Taken 2");
+                _items.Add("Taken 3");
+                _items.Add("Matrix Reloaded");
+                lstDVDlist.DataSource = _items;
+            }
+            else if (lstCustomer.SelectedIndex == 0)
+            {
+                List<string> _items = new List<string>();
+                lstDVDlist.Visible = true;
+                _items.Add("Matrix Reloaded");
+                _items.Add("Taken");
+                _items.Add("Taken 2");
+                _items.Add("Taken 3");
+                _items.Add("The Lord of the Rings: The Return of the King");
+                _items.Add("The Lion King");
+                _items.Add("The King's Speech");
+                lstDVDlist.DataSource = _items;
+            }
+            else if (lstCustomer.SelectedIndex == 2)
+            {
+                List<string> _items = new List<string>();
+                lstDVDlist.Visible = true;
+                _items.Add("Matrix Reloaded");
+                _items.Add("Taken");
+                _items.Add("Taken 2");
+                _items.Add("Taken 3");
+                _items.Add("The Lord of the Rings: The Return of the King");
+                _items.Add("The Lion King");
+                _items.Add("The King's Speech");
+                lstDVDlist.DataSource = _items;
+            }
+
+
+
         }
     }
 }
