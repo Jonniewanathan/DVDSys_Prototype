@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCustomerDereg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerDereg.Designer.cs">
+      <DependentUpon>frmCustomerDereg.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCustomerList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,8 +100,23 @@
     <Compile Include="frmDVDReg.Designer.cs">
       <DependentUpon>frmDVDReg.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRentDVD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRentDVD.Designer.cs">
+      <DependentUpon>frmRentDVD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReturnDVD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReturnDVD.Designer.cs">
+      <DependentUpon>frmReturnDVD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCustomerDereg.resx">
+      <DependentUpon>frmCustomerDereg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCustomerList.resx">
       <DependentUpon>frmCustomerList.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +140,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDVDReg.resx">
       <DependentUpon>frmDVDReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRentDVD.resx">
+      <DependentUpon>frmRentDVD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReturnDVD.resx">
+      <DependentUpon>frmReturnDVD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

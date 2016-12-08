@@ -67,11 +67,44 @@ namespace WindowsFormsApplication1
             formCustomerReg.Show();
         }
 
-        private void updateCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        private void mnuUpdateCustomer_Click(object sender, EventArgs e)
         {
             frmCustomerUpdate formCustomerUpdate = new frmCustomerUpdate(this);
             this.Hide();
             formCustomerUpdate.Show();
+        }
+
+        private void lstCustomerList_Click(object sender, EventArgs e)
+        {
+            frmCustomerList formCustomerList = new frmCustomerList(this);
+            this.Hide();
+            formCustomerList.Show();
+        }
+
+        private void mnuDeregisterCustomer_Click(object sender, EventArgs e)
+        {
+            frmCustomerDereg formCustomerDereg = new frmCustomerDereg(this);
+            this.Hide();
+            formCustomerDereg.Show();
+        }
+
+        private void mnuRentDVD_Click(object sender, EventArgs e)
+        {
+            frmRentDVD formRentDVD = new frmRentDVD(this);
+            this.Hide();
+            formRentDVD.Show();
+        }
+
+        private void mnuReturnDVD_Click(object sender, EventArgs e)
+        {
+            frmReturnDVD formReturnDVD = new frmReturnDVD(this);
+            this.Hide();
+            formReturnDVD.Show();
+        }
+
+        private void mnuListDailyRentals_Click(object sender, EventArgs e)
+        {
+            frmDailyRentals
         }
     }
 }
